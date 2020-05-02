@@ -34,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mTextView = findViewById(R.id.main_tv);
         loadAllData();
-        Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
-        startActivity(intent);
     }
 
     public void loadData() {
