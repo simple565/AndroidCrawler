@@ -9,9 +9,10 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * @Description 计时器
- * @Author Lianml
- * @Create 2019-12-13 22:18
+ * Description 计时器
+ *
+ * @author Maureen
+ * Create 2019-12-13 22:18
  */
 public class RxTimerUtil {
 
@@ -54,8 +55,8 @@ public class RxTimerUtil {
     /**
      * 指定时间间隔轮询
      *
-     * @param time 指定时间间隔 单位小时
-     * @param rxAction     轮询操作
+     * @param time     指定时间间隔 单位小时
+     * @param rxAction 轮询操作
      */
     public static void interval(long time, final RxAction rxAction) {
         Observable.interval(time, TimeUnit.MINUTES)

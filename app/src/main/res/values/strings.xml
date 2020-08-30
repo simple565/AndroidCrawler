@@ -1,3 +1,59 @@
 <resources>
-    <string name="app_name">AndroidCrawler</string>
+    <string name="app_name">小蜘蛛</string>
+
+    <string-array name="final_show">
+        <item>《是否》</item>
+        <item>《逆战》</item>
+        <item>《Last Dance》</item>
+        <item>《光之翼》</item>
+        <item>《潇洒走一回》</item>
+        <item>《我期待》</item>
+    </string-array>
+
+    <string-array name="past_show">
+        <item>《大碗宽面》,郁可唯、孟佳、李斯丹妮、沈梦辰、金晨、王霏霏、张含韵,7,3,3</item>
+        <item>《艾瑞巴蒂》,张雨绮、丁当、黄圣依、吴昕、张萌、许飞、刘芸,7,0,1</item>
+        <item>《得不到的爱情》,郑希怡、黄龄、蓝盈莹、白冰、钟丽缇,5,2,1</item>
+        <item>《Beautiful Love》,万茜、朱婧汐、金莎、海陆、陈松伶,5,0,1</item>
+        <item>《兰花草》,阿朵、袁咏琳、宁静,3,2,0</item>
+        <item>《推开世界的门》,伊能静、王丽坤、王智,3,0,1</item>
+        <item>《管他什么音乐》,李斯丹妮、王丽坤、张雨绮,3,0,2</item>
+        <item>《因为我们能感到疼痛》,孟佳、金晨、张含韵,3,1,2</item>
+        <item>《相爱后动物感伤》,阿朵、袁咏琳、钟丽缇,3,1,0</item>
+        <item>《仰世而来》,丁当、白冰、金莎,3,0,0</item>
+        <item>《女孩与四重奏》,张萌、黄圣依、伊能静,3,0,1</item>
+        <item>《FLOW》,郁可唯、宁静、郑希怡,3,3,0</item>
+        <item>《用尽我的一切奔向你》,黄龄、蓝盈莹、吴昕,3,1,1</item>
+        <item>《Manta》,万茜、沈梦辰、王霏霏,3,1,1</item>
+        <item>《GentleWoman》,万茜、袁咏琳、李斯丹妮、黄龄、金晨,5,0,4</item>
+        <item>《彩虹节拍》,张雨绮、伊能静、蓝盈莹、金莎、张含韵,5,1,3</item>
+        <item>《花样年华》,张萌、孟佳、郑希怡、黄圣依、吴昕,5,2,0</item>
+        <item>《人美路子野》,郁可唯、宁静、王丽坤、白冰、王霏霏,5,4,0</item>
+        <item>《新物种》,万茜、袁咏琳、李斯丹妮、黄龄、金晨,5,0,4</item>
+        <item>《我的新衣》,张雨绮、伊能静、张萌、吴昕、郑希怡、黄圣依、张含韵,7,1,3</item>
+        <item>《傲娇》,郁可唯、宁静、蓝盈莹、白冰、王霏霏,5,4,0</item>
+        <item>《没有理想的人不伤心》,郁可唯、宁静、蓝盈莹、白冰、王霏霏,5,4,0</item>
+        <item>《别再问我什么是迪斯科+手扶拖拉机》,万茜、袁咏琳、李斯丹妮、黄龄、金晨,5,0,4</item>
+        <item>《龙虎人丹》,张雨绮、伊能静、张萌、吴昕、郑希怡、黄圣依、张含韵,7,1,3</item>
+        <item>《莲(Lit)》,郁可唯、蓝盈莹、宁静、白冰、黄圣依、王霏霏、郑希怡,7,7,0</item>
+        <item>《玫瑰少年》,阿朵、孟佳、吴昕、沈梦辰、朱婧汐、金莎、王智,7,2,0</item>
+        <item>《情人》,伊能静、万茜、李斯丹妮、黄龄、金晨、张雨绮、张含韵,7,0,7</item>
+    </string-array>
+
+    <string-array name="person">
+        <item>宁静</item>
+        <item>阿朵</item>
+        <item>蓝盈莹</item>
+        <item>孟佳</item>
+        <item>王霏霏</item>
+        <item>郁可唯</item>
+        <item>郑希怡</item>
+        <item>李斯丹妮</item>
+        <item>黄龄</item>
+        <item>金晨</item>
+        <item>万茜</item>
+        <item>伊能静</item>
+        <item>张含韵</item>
+        <item>张雨绮</item>
+    </string-array>
 </resources>

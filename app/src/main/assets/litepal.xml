@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <litepal>
-    <dbname value="KingQueen" />
-    <version value="1" />
+    <dbname value="CrawlerData" />
+    <version value="3" />
     <list>
-        <mapping class="com.maureen.androidcrawler.SignBean" />
+        <mapping class="com.maureen.androidcrawler.database.Sister" />
+        <mapping class="com.maureen.androidcrawler.database.PastShow" />
+        <mapping class="com.maureen.androidcrawler.database.FinalShow" />
+        <mapping class="com.maureen.androidcrawler.database.AllPastShowsRecord" />
+        <mapping class="com.maureen.androidcrawler.database.AllSisterRecord" />
     </list>
 </litepal>

@@ -3,9 +3,10 @@ package com.maureen.androidcrawler.bean;
 import java.util.List;
 
 /**
- * @Description Doki人气值
- * @Author Lianml
- * @Create 2020-03-24 21:25
+ * Description Doki人气值
+ *
+ * @author Maureen
+ * Create 2020-03-24 21:25
  */
 public class PopularityBean {
     /**

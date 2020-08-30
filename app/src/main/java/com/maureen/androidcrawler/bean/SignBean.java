@@ -1,15 +1,16 @@
 package com.maureen.androidcrawler.bean;
 
-import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 import java.util.List;
 
 /**
- * @Description Doki签到值
- * @Author Lianml
- * @Create 2019-12-12 21:33
+ * Description Doki签到值
+ *
+ * @author Maureen
+ * Create 2019-12-12 21:33
  */
-public class SignBean extends DataSupport {
+public class SignBean extends LitePalSupport {
 
     /**
      * data : {"ret":0,"msg":"SUCCESS",
