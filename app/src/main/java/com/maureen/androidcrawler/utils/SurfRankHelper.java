@@ -16,6 +16,7 @@ import com.maureen.androidcrawler.database.Sister;
 import org.litepal.LitePal;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -117,6 +118,7 @@ public class SurfRankHelper {
             if (SurfRankBean.SUCCESS_CODE == surfRankBean.getCode()) {
                 // 获取每个舞台浪花值
                 List<SurfRankBean.DataBean> dataBeanList = surfRankBean.getData();
+                List<AllPastShowsRecord> pastShowsRecordList = new ArrayList<>();
                 for (SurfRankBean.DataBean dataBean : dataBeanList) {
                     int index = rank2Index(dataBean.getId());
                     PastShow pastShow = new PastShow();
@@ -128,8 +130,9 @@ public class SurfRankHelper {
                     // 添加往期舞台记录
                     AllPastShowsRecord record = new AllPastShowsRecord(mPastShowArray[index].split(",")[0],
                             dataBean.getNum(), timeStamp2Date(surfRankBean.getCurrent_time()));
-                    record.save();
+                    pastShowsRecordList.add(record);
                 }
+                LitePal.saveAll(pastShowsRecordList);
             }
         }
     }
@@ -140,6 +143,7 @@ public class SurfRankHelper {
             SurfRankBean surfRankBean = new Gson().fromJson(result, SurfRankBean.class);
             if (SurfRankBean.SUCCESS_CODE == surfRankBean.getCode()) {
                 List<SurfRankBean.DataBean> dataBeanList = surfRankBean.getData();
+                List<AllSisterRecord> sisterRecordList = new ArrayList<>();
                 for (SurfRankBean.DataBean data : dataBeanList) {
                     int index = rank2Index(data.getId());
                     Log.d(TAG, "getPersonRank: " + mSisterArray[index] + " " + data.getNum());
@@ -150,8 +154,9 @@ public class SurfRankHelper {
                     sister.update(index + 1);
                     // 添加个人榜记录
                     AllSisterRecord record = new AllSisterRecord(mSisterArray[index], data.getNum(), timeStamp2Date(surfRankBean.getCurrent_time()));
-                    record.save();
+                    sisterRecordList.add(record);
                 }
+                LitePal.saveAll(sisterRecordList);
             }
         }
     }
