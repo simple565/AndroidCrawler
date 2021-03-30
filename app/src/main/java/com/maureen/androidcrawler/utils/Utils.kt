@@ -1,19 +1,17 @@
-package com.maureen.androidcrawler.utils;
+package com.maureen.androidcrawler.utils
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
+import java.text.SimpleDateFormat
+import java.util.*
 
 /**
  * @Description
  * @Author Lianml
  * @Create 2019-12-13 22:14
  */
-public class Utils {
-
-    public static String getTime(long currentMillions) {
-        Date date = new Date(currentMillions);
-        SimpleDateFormat format = new SimpleDateFormat("MM-dd HH:mm:ss", Locale.CHINA);
-        return format.format(date);
+object Utils {
+    fun getTime(currentMillions: Long): String {
+        val date = Date(currentMillions)
+        val format = SimpleDateFormat("MM-dd HH:mm:ss", Locale.CHINA)
+        return format.format(date)
     }
 }
