@@ -1,5 +1,6 @@
 package com.maureen.androidcrawler
 
+import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import com.maureen.androidcrawler.bean.DokiEntity
@@ -19,13 +20,9 @@ class ExampleUnitTest {
         val popularityRequest = Request.Builder().url(POPULARITY_DATA_URL).build()
         try {
             val gson = Gson()
-            val jsonArray: String = WebClient.webClient.newCall(popularityRequest).execute().body.toString()
-            val realJsonArray = jsonArray.substring(jsonArray.indexOf("{"), jsonArray.lastIndexOf("}") + 1)
-            println(realJsonArray)
-            val objects: JsonObject = gson.fromJson(realJsonArray, JsonObject::class.java)
-            println(objects.get("222071"))
-            val dokiEntity: DokiEntity = gson.fromJson(objects.get("222071"), DokiEntity::class.java)
-            println(dokiEntity.strName + dokiEntity.stFanTuanScoreInfo?.ddwPopularity)
+            val jsonArray = WebClient.webClient.newCall(popularityRequest).execute().body?.string()
+            val realJsonArray = jsonArray?.substring(jsonArray.indexOf("{"), jsonArray.lastIndexOf("}") + 1)
+            val dokiEntity = gson.fromJson(realJsonArray, DokiEntity::class.java)
         } catch (e: Exception) {
             e.printStackTrace()
         }
